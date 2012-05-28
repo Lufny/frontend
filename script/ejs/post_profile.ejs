@@ -1,0 +1,31 @@
+<% for(var i=0; i<posts.length; i++) { %>
+<% var currdate = new Date(posts[i].date) %>
+<% var minutes = currdate.getMinutes() %>
+<div class="singlepost" id="<%= posts[i]._id %>">
+<span class="userp"><a href="profile.html#<%= posts[i].author.username %>"><%= posts[i].author.username %></a> &gt;</span>
+<span class="container ">
+<span class="ptext"><%= posts[i].text %></span>
+<div class="nonparsed" style="display:none"></div>
+</span>
+<div class="pmenu">
+<a class="underline comm_open">Comments(<%= posts[i].commentcount %>)</a> |
+<a class="underline"><%= currdate.getDate()+"/"+(currdate.getMonth()+1)+"/"+currdate.getFullYear()+" "+currdate.getHours()+":"+(minutes.toString().length == 1 ? "0"+minutes : minutes) %></a> | <a href="single.html#<%= posts[i]._id %>">Direct link</a> | <% if (posts[i].author._id == $.cookie("lufny_uid")) { %>
+<a class="underline edit_profile">Edit</a> |
+<a class="underline delete_profile">Delete</a>
+<% } %>
+</div>
+<div class="cbox">
+<% if (posts[i].commentcount != 0) { %>
+<hr />
+<div class="comments_p">
+Loading...
+</div>
+<% } %>
+<hr />
+<div class="write_me_comm">
+<textarea class="commText"></textarea><br>
+<button class="SendITcomm">New comment!</button>
+</div>
+</div>
+</div>
+<% } %>

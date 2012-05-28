@@ -1,0 +1,114 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<html>
+	<head>
+		<title>About</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/png" href="img/fav.png" />
+		<link type="text/css" href="css/vader/jquery-ui-1.8.18.custom.css" rel="Stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.noty.css"/>
+		<link rel="stylesheet" type="text/css" href="css/noty_theme_default.css"/>
+  		<link rel="stylesheet" type="text/css" href="css/buttons.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.qtip.css"/>
+		
+		<script type="text/javascript" src="script/hashes.js"></script>
+		<script type="text/javascript" src="script/jquery.min.js"></script>
+		<script type="text/javascript" src="script/jquery-ui-1.8.18.custom.min.js"></script>
+		<script type="text/javascript" src="script/jquery.qtip.js"></script>
+		<script type="text/javascript" src="script/jquery.cookie.js"></script>
+		<script type="text/javascript" src="script/flexcroll.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+		<script type="text/javascript" src="script/coal.js"></script>
+		<script type="text/javascript" src="script/ejs_production.js"></script>
+		<script type="text/javascript" src="script/jquery.noty.js"></script>
+		<script type="text/javascript" src="script/notification-worker.js"></script>
+		
+	</head>
+	
+	<body>
+		<div class="leftbar">
+			<div class="logo">Lufny</div>
+			<hr />
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+		
+			</div>
+		</div>
+		
+		<div class="rightbody" id="meright">
+			This project is made by people who are working/have worked hard making lufny a great social network.
+			<ul>
+				<li>Stoke - Sandro — Backend developer (alpha, beta), Frontend developer (beta)</li>
+				<li>Koala - Diego — CSS &amp; Graphics (beta)</li>
+				<li>Wsx - Marco — Co-backend developer</li> 
+				<li>Domino - Emanuele — CSS &amp; Frontend developer (alpha)</li>
+				<li>Riot - Daniele — Graphics &amp; Docs</li>
+			</ul>
+			
+			<div style="clear: both; width: 100%;"></div>
+		</div>
+		
+		<div class="brightbar">
+			<div class="topmenu_it">
+				<ul>
+					<li id="_noty_all"><img class="fl" src="img/world_menu.png" /><div id="noty_numb" class="noty_numb">0</div></li>
+					<li id="_new_post"><img src="img/new_menu.png" /></li>
+					<li id="_res_post"><img src="img/respost.png" /></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div style="clear: both; width: 100%;"></div>
+		
+		<div id="NEWPOST-send" title="NewPost" style="display: none">
+			<textarea style="resize: none" ROWS="10" COLS="43" id="post_text"></textarea><br><br>
+			<button id="SendIT">New post!</button>
+		</div>
+		
+		<div id="SETTINGS" title="Settings" style="display: none">	
+			<div class="bg_in_div">
+				<div style="clear: both; width: 100%;"></div>
+				<table>
+					<tr>	
+						<td><div class="optitem">E-mail:</div></td>
+						<td><input class="setting_input" type="text" id="mail" value=""/></td>
+					</tr>
+					<tr></tr>
+					<tr>	
+						<td><div class="optitem" >Nome:</div></td>
+						<td><input class="setting_input" type="text" id="rname" value=""/></td>
+					</tr>
+					<tr></tr>
+					<tr>	
+						<td><div class="optitem">Cognome:</div></td>
+						<td><input class="setting_input" type="text" id="rsurname" value=""/></td>
+					</tr>
+					<tr></tr>
+					<tr>	
+						<td><div class="optitem">Avatar:</div></td>
+						<td><input class="setting_input" type="text" id="avatar" value=""/></td>
+					</tr>
+					<tr>	
+						<td></td>
+						<td><button id="send_opt">Refresh</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id="_n_noty" style="display: none">	
+			<div class="single_noty_in">
+				Diego ha scritto QUI
+			</div>
+			<div class="single_noty_in">
+				Diego ha scritto QUI
+			</div>
+			<div class="single_noty_in">
+				Diego ha scritto QUI
+			</div>
+			
+		</div>
+	</body>
+</html>

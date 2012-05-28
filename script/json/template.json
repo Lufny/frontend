@@ -1,0 +1,4 @@
+{
+	"index": "<div id='posts'></div><div style='clear: both; width: 100%;'></div><div class='moreposts' id='more'>More...</div>",
+	"profile": "<div class='topstat' id='topstat'></div><div class='mn_stats_' id='mn_stats'></div><div id='posts'></div><div style='clear: both; width: 100%;'></div><div class='moreposts' id='more_profile'>More...</div>"
+}

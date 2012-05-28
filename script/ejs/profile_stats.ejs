@@ -1,0 +1,16 @@
+<div class="av_stats_"> <img src="<%= (stats.avatar || "img/miniav.png") %>" class="avatar" /> </div>
+<div class="st_stats_"> 
+<b style="font-size: 20px;"><%= (stats.rname+" "+stats.rsurname) %></b>  
+<div class="statlist">
+<table>
+<tr>
+<td style="text-align: right;"><span><b>E-mail:</b></span></td>
+<td><span><%= (stats.mail) %></span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span><b>Birth:</b></span></td>
+<td><span><% var c = new Date(stats.bday); %><%= c.getDay()+"/"+(c.getMonth()+1)+"/"+(c.getFullYear()) %></span></td>
+</tr>
+</table>
+</div>
+</div>

@@ -1,0 +1,30 @@
+<% var currdate = new Date(posts.date) %>
+<% var minutes = currdate.getMinutes() %>
+<div class="singlepost" id="<%= posts._id %>">
+<span class="userp"><a href="#/profile/<%= posts.author.username %>"><%= posts.author.username %></a> &gt;</span>
+<span class="container ">
+<span class="ptext"><%= posts.text %></span>
+<div class="nonparsed" style="display:none"></div>
+</span>
+<div class="pmenu">
+<a class="underline comm_open">Comments(<%= posts.commentcount %>)</a> |
+<a class="underline"><%= currdate.getDate()+"/"+(currdate.getMonth()+1)+"/"+currdate.getFullYear()+" "+currdate.getHours()+":"+(minutes.toString().length == 1 ? "0"+minutes : minutes) %></a> | <% if (posts.author._id == $.cookie("lufny_uid")) { %> |
+<a class="underline edit">Edit</a> |
+<a class="underline delete">Delete</a> |
+<% } %>
+<a><img class="fav55" src="img/star_off.png" /></a>
+</div>
+<div class="cboxsingle">
+<% if (posts.commentcount != 0) { %>
+<hr />
+<div class="comments_p">
+Loading...
+</div>
+<% } %>
+<hr />
+<div class="write_me_comm">
+<textarea class="commText"></textarea><br>
+<button class="SendITcomm">New comment!</button>
+</div>
+</div>
+</div>

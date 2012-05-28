@@ -1,0 +1,5 @@
+<% for(var i=0; i<comments.length; i++) { %>
+<% var currdate = new Date(comments[i].date) %>
+<% var minutes = currdate.getMinutes() %>
+<div class="single_comment" id="<%= comments[i]._id %>"> <div style="margin: 5px;"><div class="comments_date"><%= currdate.getDate()+"/"+(currdate.getMonth()+1)+"/"+currdate.getFullYear()+" "+currdate.getHours()+":"+(minutes.toString().length == 1 ? "0"+minutes : minutes) %></div><% if (comments[i].author._id == $.cookie("lufny_uid")) { %><span class="closep">X</span><% } %><span class="userp"><a href="#/profile/<%= comments[i].author.username %>"><%= comments[i].author.username %></a>&gt;</span><div style="overflow-x: hidden;"><%= comments[i].text %></div></div></div>
+<% } %>
